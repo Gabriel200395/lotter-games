@@ -7,17 +7,109 @@
 .lotter-page-container {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  overflow: hidden;
 }
 
 .lotter-page-container .lotter-sidebar {
   height: 100vh;
   background-color: #efefef;
+  position: relative;
 }
 
 .lotter-page-container .lotter-container-numbers-games {
   background-color: #efefef;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lotter-page-container .grid-numbers-games {
+  display: grid;
+  max-width: 500px;
+  grid-template-columns: repeat(auto-fit, minmax(70px, auto));
+  grid-auto-rows: 70px;
+  grid-gap: 30px;
+}
+
+.lotter-page-container .grid-numbers-games .grid-number {
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #333333;
+}
+
+.lotter-page-container .lotter-games-select {
+  position: absolute;
+  top: 106px;
+  border-radius: 5px;
+  width: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lotter-page-container .lotter-games-select button {
+  position: absolute;
+  top: 0px;
+  cursor: pointer;
+  height: 100%;
+  width: 40px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.lotter-page-container .lotter-games-select .select {
+  width: 180px;
+  height: 35px;
+  border: none;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.lotter-page-container .lotter-games-select .text-game {
+  position: absolute;
+  left: 77px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #333333;
+}
+
+.lotter-page-container .lotter-games-select .grid-text-select {
+  position: absolute;
+  top: 40px;
+  width: 180px;
+  height: 190px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.lotter-page-container .lotter-games-select .grid-text-select p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  padding-left: 5px;
+  cursor: pointer;
+  color: #333333;
 }
 
 @media (max-width: 768px) {
@@ -30,7 +122,6 @@
   }
 
   .lotter-page-container .img-mobile {
-    height: 400px;
     width: 100%;
   }
 }
