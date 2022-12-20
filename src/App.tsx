@@ -37,8 +37,8 @@ function App() {
               <p onClick={() => handleChangeSelect("MEGA-SENA")}>MEGA-SENA</p>
               <p onClick={() => handleChangeSelect("QUINA")}>QUINA</p>
               <p onClick={() => handleChangeSelect("LOTOFACIL")}>LOTOFACIL</p>
-              <p onClick={() => handleChangeSelect("MEGA-SENA")}>LOTOMANIA</p>
-              <p onClick={() => handleChangeSelect("LOTOMANIA")}>TIMEMANIA</p>
+              <p onClick={() => handleChangeSelect("LOTOMANIA")}>LOTOMANIA</p>
+              <p onClick={() => handleChangeSelect("TIMEMANIA")}>TIMEMANIA</p>
               <p onClick={() => handleChangeSelect("DIA DE SORTE")}>
                 DIA DE SORTE
               </p>
