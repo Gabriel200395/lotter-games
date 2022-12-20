@@ -1,13 +1,42 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.lotter-page-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.lotter-page-container .lotter-sidebar {
+  height: 100vh;
+  background-color: #efefef;
+}
+
+.lotter-page-container .lotter-container-numbers-games {
+  background-color: #efefef;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .lotter-page-container {
+    flex-direction: column;
+  }
+
+  .lotter-page-container .img-web {
+    display: none;
+  }
+
+  .lotter-page-container .img-mobile {
+    height: 400px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .lotter-page-container .img-mobile {
+    display: none;
+  }
 }
