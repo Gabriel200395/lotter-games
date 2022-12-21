@@ -101,58 +101,64 @@ function App() {
   return (
     <div className="lotter-page-container">
       <div className="lotter-sidebar">
-        <img src={sidebarMobile} alt={sidebarMobile} className="img-mobile" />
+         <img src={sidebarMobile} alt={sidebarMobile} className="img-mobile" /> 
         <img
           src={looterObjectGames[textSelect].img}
           alt={looterObjectGames[textSelect].img}
           height={"100%"}
           className="img-web"
         />
+        <div className="looter-sidebar-grid">
+          <div className="lotter-games-select">
+            <div className="select">
+              <p className="text-game">
+                {looterObjectGames[textSelect].titulo}
+              </p>
+              <button onClick={handleOpenSelect}>
+                <img src={setinha} alt={setinha} />
+              </button>
+            </div>
 
-        <div className="lotter-games-select">
-          <div className="select">
-            <button onClick={handleOpenSelect}>
-              <img src={setinha} alt={setinha} />
-            </button>
-            <p className="text-game">{looterObjectGames[textSelect].titulo}</p>
+            {selectEvent && (
+              <div className="grid-text-select">
+                <p onClick={() => handleChangeSelect("mega_sena")}>MEGA-SENA</p>
+                <p onClick={() => handleChangeSelect("quina")}>QUINA</p>
+                <p onClick={() => handleChangeSelect("lotofacil")}>LOTOFACIL</p>
+                <p onClick={() => handleChangeSelect("lotomania")}>LOTOMANIA</p>
+                <p onClick={() => handleChangeSelect("timemania")}>TIMEMANIA</p>
+                <p onClick={() => handleChangeSelect("dia_sorte")}>
+                  DIA DE SORTE
+                </p>
+              </div>
+            )}
           </div>
 
-          {selectEvent && (
-            <div className="grid-text-select">
-              <p onClick={() => handleChangeSelect("mega_sena")}>MEGA-SENA</p>
-              <p onClick={() => handleChangeSelect("quina")}>QUINA</p>
-              <p onClick={() => handleChangeSelect("lotofacil")}>LOTOFACIL</p>
-              <p onClick={() => handleChangeSelect("lotomania")}>LOTOMANIA</p>
-              <p onClick={() => handleChangeSelect("timemania")}>TIMEMANIA</p>
-              <p onClick={() => handleChangeSelect("dia_sorte")}>
-                DIA DE SORTE
-              </p>
-            </div>
-          )}
+          <div className="lotter-text-img">
+            <img src={logo} alt={logo} height={30} />
+            <p>{looterObjectGames[textSelect].titulo}</p>
+          </div>
+
+          <div className="lotter-competition-text">
+              <p className="lotter-competition">CONCURSO</p>
+              <p className="lotter-competition-data">4531 – 07/04/2020</p>
+          </div>
         </div>
       </div>
       <div className="lotter-container-numbers-games">
-        <div className="lotter-result">
+         <div className="lotter-result">
           <div className="grid-numbers-games">
-            {looterObjectGames[textSelect].numbers.map((number) => (
-              <div className="grid-number">{number}</div>
+            {looterObjectGames[textSelect].numbers.map((number, index) => (
+              <div className="grid-number" key={index}>{number}</div>
             ))}
           </div>
         </div>
 
-        <p className="text-resul">Este sorteio é meramente ilustrativo e não possui nenhuma ligação com a CAIXA.</p>
-      </div>
-
-      <div className="lotter-text-img">
-        <img src={logo} alt={logo} height={30} />
-        <p>{looterObjectGames[textSelect].titulo}</p>
-      </div>
-
-      <div className="lotter-competition-text">
-        <div>
-          <p className="lotter-competition">CONCURSO</p>
-          <p className="lotter-competition-data">4531 – 07/04/2020</p>
-        </div>
+        
+          <p className="text-resul">
+            Este sorteio é meramente ilustrativo e não possui nenhuma ligação
+            com a CAIXA.
+          </p>
+        
       </div>
     </div>
   );
