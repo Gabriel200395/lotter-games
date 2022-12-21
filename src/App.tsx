@@ -1,6 +1,7 @@
 import sidebarWeb from "./assets/img/Sidebar.png";
 import sidebarMobile from "./assets/img/Header_Background.png";
 import setinha from "./assets/img/setinha.png";
+import logo from "./assets/img/logo-sena.png";
 import { useState } from "react";
 
 function App() {
@@ -58,6 +59,18 @@ function App() {
           <div className="grid-number">80</div>
           <div className="grid-number">90</div>
           <div className="grid-number">100</div>
+        </div>
+      </div>
+
+      <div className="lotter-text-img">
+        <img src={logo} alt={logo} height={30} />
+        <p>{textSelect}</p>
+      </div>
+
+      <div className="lotter-competition-text">
+        <div>
+          <p className="lotter-competition">CONCURSO</p>
+          <p className="lotter-competition-data">4531 – 07/04/2020</p>
         </div>
       </div>
     </div>

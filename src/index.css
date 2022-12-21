@@ -74,7 +74,7 @@
   outline: none;
   cursor: pointer;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   border-radius: 5px;
 }
@@ -110,10 +110,52 @@
   padding-left: 12px;
   cursor: pointer;
   color: #333333;
-} 
+}
 
 .lotter-page-container .lotter-games-select .grid-text-select p:hover {
- background-color: #efefef;
+  background-color: #efefef;
+}
+
+.lotter-page-container .lotter-text-img {
+  position: absolute;
+  top: 334px;
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.lotter-page-container .lotter-text-img p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.lotter-page-container .lotter-competition-text {
+  position: absolute;
+  top: 550px;
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lotter-page-container .lotter-competition-text .lotter-competition {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 10px; 
+  margin-bottom: 5px;
+}
+
+.lotter-page-container .lotter-competition-text .lotter-competition-data {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 13px; 
 }
 
 @media (max-width: 768px) {
