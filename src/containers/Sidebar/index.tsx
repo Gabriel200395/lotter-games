@@ -50,14 +50,14 @@ const Sidebar = ({
       <div className="looter-sidebar-grid">
         <div className="lotter-games-select">
           <div className="select">
-            <p className="text-game">{looterObjectGames[textSelect].titulo}</p>
+            <p className="text-game" data-testid="select">{looterObjectGames[textSelect].titulo}</p>
             <button onClick={handleOpenSelect}>
               <img src={arrow} alt={arrow} />
             </button>
           </div>
 
           {selectEvent && (
-            <div className="grid-text-select">
+            <div className="grid-text-select" data-testid="select-options">
               {lottersNames.map((name, index) => {
                 return (
                   <p

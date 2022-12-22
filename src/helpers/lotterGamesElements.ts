@@ -51,13 +51,13 @@ const looterObjectGames: looterGamesInstance = {
   timemania: {
     imgWeb: IMG.timemania,
     imgMobile: IMG.timemania_mobile,
-    titulo: "TIMEMANÍA",
+    titulo: "TIMEMANIA",
     numbers: ["05", "20", "12", "29", "30", "55", "67"],
   },
   lotomania: {
     imgWeb: IMG.lotomania,
     imgMobile: IMG.lotomania_mobile,
-    titulo: "LOTOMANIA",
+    titulo: "LOTOMANÍA",
     numbers: [
       "10",
       "20",
@@ -65,7 +65,7 @@ const looterObjectGames: looterGamesInstance = {
       "40",
       "50",
       "60",
-      "50",
+      "55",
       "21",
       "32",
       "19",

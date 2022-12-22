@@ -13,11 +13,11 @@ export const lottersNames: looterObjectGamesInstance[] = [
     params: "quina",
   },
   {
-    text: "LOTOFACIL",
+    text: "LOTOFÁCIL",
     params: "lotofacil",
   },
   {
-    text: "LOTOMANIA",
+    text: "LOTOMANÍA",
     params: "lotomania",
   },
   {

@@ -1,6 +1,6 @@
-import Sidebar from "./containers/Sidebar";
-import usePageFunctions from "./page/usePageFunctions";
-import LotterGamesNumbers from "./containers/LotterGamesNumbers";
+import Sidebar from "../containers/Sidebar";
+import usePageFunctions from "./usePageFunctions";
+import LotterGamesNumbers from "../containers/LotterGamesNumbers";
 
 function App() {
   const { handleChangeSelect, handleOpenSelect, selectEvent, textSelect } =
@@ -25,4 +25,4 @@ export default App;
 //[x] Sidebar dinamico cores
 //[X] Responsivo
 //[] Teste unitarios
-//[] Refatora Codigo
+//[x] Refatora Codigo

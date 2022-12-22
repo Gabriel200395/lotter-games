@@ -1,4 +1,4 @@
-import megaSena from "../assets/img/mega-sena.png";
+import megaSena from "../assets/img/mega_sena.png";
 import lotofacil from "../assets/img/lotofacil.png";
 import lotomania from "../assets/img/lotomania.png";
 import dia_sorte from "../assets/img/dia_sorte.png";
