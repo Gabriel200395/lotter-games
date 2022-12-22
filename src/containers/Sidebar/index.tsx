@@ -43,8 +43,8 @@ const Sidebar = ({
 
   return (
     <div className="lotter-sidebar">
-      {IMGS.map(({ url, alt, classImg, height }) => {
-        return <img src={url} alt={alt} className={classImg} height={height} />;
+      {IMGS.map(({ url, alt, classImg, height }, index) => {
+        return <img key={index} src={url} alt={alt} className={classImg} height={height} />;
       })}
 
       <div className="looter-sidebar-grid">
