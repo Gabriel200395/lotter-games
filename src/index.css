@@ -29,8 +29,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; 
-  padding-bottom: 32px; 
+  align-items: center;
+  padding-bottom: 32px;
   padding-top: 32px;
 }
 
@@ -77,7 +77,7 @@ body {
   width: 87%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
 }
 
 .lotter-page-container .lotter-games-select button {
@@ -112,7 +112,7 @@ body {
 
 .lotter-page-container .lotter-games-select .grid-text-select {
   position: absolute;
-  top: 40px;
+  top: 70px;
   width: 180px;
   height: 190px;
   background-color: #fff;
@@ -153,8 +153,6 @@ body {
   margin-left: 10px;
 }
 
-
-
 .lotter-page-container .lotter-competition-text .lotter-competition {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -174,7 +172,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #333333;
-  font-size: 16px; 
+  font-size: 16px;
   text-align: center;
 }
 
@@ -191,36 +189,54 @@ body {
     width: 100%;
   }
 
-  .lotter-page-container .lotter-sidebar .looter-sidebar-grid{
-    width: 100%; 
-    height: 40%;
-  } 
+  .lotter-page-container .lotter-sidebar .looter-sidebar-grid {
+    width: 100%;
+    height: 70%;
+  }
 
   .lotter-text-img {
     flex-direction: column;
-  } 
-
-  .lotter-text-img img{
-    margin-bottom: 10px;
-  } 
- 
-
-  .lotter-page-container .lotter-competition-text {
-   display: none;
-  } 
-
-  .lotter-page-container .lotter-sidebar {
-    height: auto;
-  }  
-  
-  .lotter-page-container .lotter-container-numbers-games {
-    height: 460px;
   }
 
-  .lotter-page-container .grid-numbers-games{
+  .lotter-text-img img {
+    margin-bottom: 10px;
+  }
+
+  /* .lotter-page-container .lotter-competition-text {
+    display: none;
+  }
+ */
+  .lotter-page-container .lotter-sidebar {
+    height: 100%;
+  }
+
+ 
+
+  .lotter-page-container .grid-numbers-games {
     width: 300px;
   }
 
+  .lotter-page-container .text-resul {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .lotter-page-container .lotter-competition-text .lotter-competition {
+    display: none;
+  }
+
+  .lotter-page-container .lotter-competition-text .lotter-competition-data {
+    text-align: center;
+  }
+}
+
+
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .lotter-page-container .lotter-container-numbers-games {
+    height: 100%;
+    padding-top: 50px;
+  }
 }
 
 
