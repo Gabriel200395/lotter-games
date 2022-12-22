@@ -1,6 +1,6 @@
 import arrow from "../../assets/img/setinha.png";
 import logo from "../../assets/img/logo-sena.png";
-import { looterObjectGames } from "../../helpers/lotterGamesElements";
+import { lotterGamesNames, lotterGamesElements } from "../../helpers";
 
 interface SidebarInstance {
   handleOpenSelect: () => void;
@@ -15,6 +15,9 @@ const Sidebar = ({
   handleOpenSelect,
   selectEvent,
 }: SidebarInstance) => {
+  const { looterObjectGames } = lotterGamesElements;
+  const { lottersNames } = lotterGamesNames;
+
   return (
     <div className="lotter-sidebar">
       <img
@@ -39,14 +42,16 @@ const Sidebar = ({
 
           {selectEvent && (
             <div className="grid-text-select">
-              <p onClick={() => handleChangeSelect("mega_sena")}>MEGA-SENA</p>
-              <p onClick={() => handleChangeSelect("quina")}>QUINA</p>
-              <p onClick={() => handleChangeSelect("lotofacil")}>LOTOFACIL</p>
-              <p onClick={() => handleChangeSelect("lotomania")}>LOTOMANIA</p>
-              <p onClick={() => handleChangeSelect("timemania")}>TIMEMANIA</p>
-              <p onClick={() => handleChangeSelect("dia_sorte")}>
-                DIA DE SORTE
-              </p>
+              {lottersNames.map((name, index) => {
+                return (
+                  <p
+                    key={index}
+                    onClick={() => handleChangeSelect(name.params)}
+                  >
+                    {name.text}
+                  </p>
+                );
+              })}
             </div>
           )}
         </div>

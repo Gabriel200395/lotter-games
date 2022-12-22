@@ -9,9 +9,9 @@ import lotomania_mobile from "../assets/img/lotomania_mobile.png";
 import timemania_mobile from "../assets/img/timemania_mobile.png";
 import dia_sorte_mobile from "../assets/img/dia_sorte_mobile.png";
 import lotofacil_mobile from "../assets/img/lotofacil_mobile.png";
-import mega_sena_mobile from "../assets/img/lotofacil_mobile.png";
+import mega_sena_mobile from "../assets/img/mega_sena_mobile.png";
 
-export {
+export default {
   megaSena,
   lotofacil,
   lotomania,
