@@ -9,28 +9,44 @@ interface SidebarInstance {
   textSelect: string;
 }
 
+type ImgsInstance = {
+  url: string;
+  alt: string;
+  classImg: string;
+  height: string;
+};
+
 const Sidebar = ({
   textSelect,
   handleChangeSelect,
   handleOpenSelect,
   selectEvent,
 }: SidebarInstance) => {
+  
   const { looterObjectGames } = lotterGamesElements;
   const { lottersNames } = lotterGamesNames;
 
+  const IMGS: ImgsInstance[] = [
+    {
+      url: looterObjectGames[textSelect].imgMobile,
+      alt: looterObjectGames[textSelect].imgMobile,
+      classImg: "img-mobile",
+      height: "auto",
+    },
+    {
+      url: looterObjectGames[textSelect].imgWeb,
+      alt: looterObjectGames[textSelect].imgWeb,
+      classImg: "img-web",
+      height: "100%",
+    },
+  ];
+
   return (
     <div className="lotter-sidebar">
-      <img
-        src={looterObjectGames[textSelect].imgMobile}
-        alt={looterObjectGames[textSelect].imgMobile}
-        className="img-mobile"
-      />
-      <img
-        src={looterObjectGames[textSelect].imgWeb}
-        alt={looterObjectGames[textSelect].imgWeb}
-        height={"100%"}
-        className="img-web"
-      />
+      {IMGS.map(({ url, alt, classImg, height }) => {
+        return <img src={url} alt={alt} className={classImg} height={height} />;
+      })}
+
       <div className="looter-sidebar-grid">
         <div className="lotter-games-select">
           <div className="select">

@@ -1,4 +1,5 @@
-import IMG from "./lotterGamesImgs";
+import IMG from "./lotterGamesImgs"; 
+
 
 interface looterGamesInstance {
   [key: string]: {
@@ -8,6 +9,15 @@ interface looterGamesInstance {
     numbers: string[];
   };
 }
+
+
+type ImgsInstance = {
+  url: string;
+  alt: string;
+  classImg: string;
+  height: string;
+};
+
 
 const looterObjectGames: looterGamesInstance = {
   mega_sena: {
@@ -84,6 +94,8 @@ const looterObjectGames: looterGamesInstance = {
     numbers: ["10", "20", "30", "40", "50", "80", "90"],
   },
 };
+
+
 
 export default {
   looterObjectGames,
