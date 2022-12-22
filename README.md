@@ -1,46 +1,80 @@
-# Getting Started with Create React App
+<h1 align="center">Lotter Games</h1>
+<h4 align="center">
+  <img src="./public/jogo.gif"/><br>
+</h4>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#pencil-autor">Autor</a>
+</p>
 
-## Available Scripts
+## :wrench: Tecnologias
 
-In the project directory, you can run:
+<!--EXEMPLO:-->
 
-### `yarn start`
+- [React](https://pt-br.reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [React Testing Lybrary](https://testing-library.com/docs/react-testing-library/intro/)
+- [Css-Flexbox](https://www.devmedia.com.br/css3-flexbox-funcionamento-e-propriedades/29532)
+- [Css-Grid-Layout](https://www.origamid.com/projetos/css-grid-layout-guia-completo/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💻 Como usar
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Clone o projeto: `git clone https://github.com/Gabriel200395/lotter-games.git`
+- Entrar na pasta do projeto: `cd lotter-games`
+- Iniciar a aplicação: `yarn lotter-games`
+- baixe na aplicação: `yarn`
+- testa aplicação: `yarn test`
 
-### `yarn test`
+Irá abrir uma página no browser (se não abrir, vá até [http://localhost:3000](http://localhost:3000/)).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :heart_eyes: Features
 
-### `yarn build`
+<h3 align="left">Tela Mega Sena 😍.</h3>
+<h4 align="left">
+  <img src="./public/mega.png" /><br>
+</h4>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h3 align="left">Tela Quina 😍.</h3>
+<h4 align="left">
+  <img src="./public/quina.png" /><br>
+</h4>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h3 align="left">Tela Lotofácil 😍.</h3>
+<h4 align="left">
+  <img src="./public/lotofacil.png" /><br>
+</h4>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h3 align="left">Tela Lotomanía 😍.</h3>
+<h4 align="left">
+  <img src="./public/lotomania.png" /><br>
+</h4>
 
-### `yarn eject`
+<h3 align="left">Tela Timemania 😍.</h3>
+<h4 align="left">
+  <img src="./public/timemania.png" /><br>
+</h4>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<h3 align="left">Tela Dia de Sorte 😍.</h3>
+<h4 align="left">
+  <img src="./public/dia_sorte.png" /><br>
+</h4>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h3 align="left">Aplicação responsivo ❤.</h3>
+<h4 align="left">
+  <img src="./public/responsivo.png" /><br>
+</h4>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<h3 align="left">Testando aplicação ❤.</h3> 
+<h4 align="left">
+  <img src="./public/teste-unitario.png" /><br>
+</h4>
+## :pencil: Autor
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Gabriel200395"><img src="https://avatars2.githubusercontent.com/u/68435908?s=400&u=9cbee30d93471534b2bd12a6364edd45e618b923&v=4" width="100px;" alt=""/><br /><sub><b>Gabriel Souza</b></sub></a><br /></td>
+  <tr>
+</table>
