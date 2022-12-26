@@ -10,6 +10,13 @@
   <a href="#pencil-autor">Autor</a>
 </p>
 
+## :page_facing_up: Sobre
+
+Projeto que desenvolvi com o objetivo de melhorar minhas habilidades e conhecimentos tanto em ReactJS quanto em programação Web em geral. O projeto é baseado em resultados de jogos de loterias.
+
+No projeto tentei utilizar boas práticas de desenvolvimento, como separação de componentes, para assim facilitar a reutilização em múltiplos arquivos e teste funcionais.
+
+
 ## :wrench: Tecnologias
 
 <!--EXEMPLO:-->
